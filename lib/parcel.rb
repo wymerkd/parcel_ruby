@@ -31,8 +31,10 @@ class Parcel
     @@parcels[id]
   end
 
-  def update(name)
+  def update(name, weight, height)
     @name = name
+    @weight = weight
+    @height = height
   end
 
   def delete

@@ -55,8 +55,10 @@ describe "#Parcel" do
     it('updates a parcel by id') do
       parcel = Parcel.new(nil, nil, 'Package', nil)
       parcel.save()
-      parcel.update("A Love Supreme")
+      parcel.update("A Love Supreme", 55, 20)
       expect(parcel.name).to(eq("A Love Supreme"))
+      expect(parcel.weight).to(eq(55))
+      expect(parcel.height).to(eq(20))
     end
   end
 
