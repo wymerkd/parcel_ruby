@@ -28,7 +28,7 @@ class Parcel
   end
 
   def self.find(id)
-    @@parcels
+    @@parcels[id]
   end
 
   def update(name)
